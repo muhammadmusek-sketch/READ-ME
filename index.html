@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เด — เปลี่ยน Google Form เป็นอินโฟกราฟิกที่นำเสนอได้</title>
+    <meta
+      name="description"
+      content="เด เว็บสรุปข้อมูลจาก Google Form ออกมาเป็นหน้าอินโฟกราฟิกที่สวยงาม แก้ไขเนื้อหาได้ และพร้อมสำหรับการนำเสนอของนักศึกษา"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+Thai:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="top">
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a class="logo" href="#top">เด<span class="logo__dot">.</span></a>
+
+        <nav class="nav" id="nav" aria-label="เมนูหลัก">
+          <a class="nav__link" href="#features">ฟีเจอร์</a>
+          <a class="nav__link" href="#why-us">ทำไมต้องเด</a>
+          <a class="nav__link" href="#how-it-works">วิธีใช้งาน</a>
+          <a class="btn btn--primary nav__cta" href="#cta">เริ่มใช้งาน</a>
+        </nav>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="เปิดเมนู"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <span class="badge">สำหรับนักศึกษาที่ต้องพรีเซนต์งาน</span>
+            <h1 class="hero__title">
+              เปลี่ยน Google Form ให้เป็น
+              <span class="hero__highlight">อินโฟกราฟิกนำเสนอ</span>
+              ได้ในไม่กี่นาที
+            </h1>
+            <p class="hero__text">
+              เด สรุปข้อมูลจากแบบฟอร์มของคุณให้เป็นหน้าข้อมูลที่สวยงาม
+              แก้ไขได้ พร้อมใช้พรีเซนต์ทันที โดยไม่ต้องนั่งแต่งข้อมูลเอง
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#cta">เริ่มใช้งานฟรี</a>
+              <a class="btn btn--ghost" href="#how-it-works">ดูวิธีใช้งาน</a>
+            </div>
+            <p class="hero__note">ง่าย เร็ว — ไม่ต้องใช้ทักษะออกแบบก็ทำได้</p>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="preview">
+              <div class="preview__toolbar">
+                <span class="preview__dot"></span>
+                <span class="preview__dot"></span>
+                <span class="preview__dot"></span>
+                <span class="preview__toolbar-title">de · dashboard</span>
+              </div>
+              <div class="preview__body">
+                <div class="preview__head">
+                  <span class="preview__title">ผลสำรวจความพึงพอใจในหลักสูตร</span>
+                  <span class="preview__badge">แก้ไขได้</span>
+                </div>
+
+              <div class="preview__stats">
+                <div class="preview__stat">
+                  <span class="preview__number">124</span>
+                  <span class="preview__label">ผู้ตอบแบบสอบถาม</span>
+                </div>
+                <div class="preview__stat">
+                  <span class="preview__number">82%</span>
+                  <span class="preview__label">พึงพอใจระดับมาก</span>
+                </div>
+              </div>
+
+              <ul class="preview__bars">
+                <li class="preview__bar">
+                  <span class="preview__bar-label">เนื้อหาหลักสูตร</span>
+                  <span class="preview__bar-track">
+                    <span class="preview__bar-fill" style="--w: 90%"></span>
+                  </span>
+                  <span class="preview__bar-value">90%</span>
+                </li>
+                <li class="preview__bar">
+                  <span class="preview__bar-label">อาจารย์ผู้สอน</span>
+                  <span class="preview__bar-track">
+                    <span class="preview__bar-fill" style="--w: 78%"></span>
+                  </span>
+                  <span class="preview__bar-value">78%</span>
+                </li>
+                <li class="preview__bar">
+                  <span class="preview__bar-label">สิ่งอำนวยความสะดวก</span>
+                  <span class="preview__bar-track">
+                    <span class="preview__bar-fill" style="--w: 64%"></span>
+                  </span>
+                  <span class="preview__bar-value">64%</span>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__tag">ฟีเจอร์</span>
+            <h2 class="section__title">ทุกอย่างที่ต้องใช้สรุปข้อมูล ให้เสร็จในที่เดียว</h2>
+            <p class="section__text">จากแบบฟอร์มสำเร็จรูป กลายเป็นหน้าข้อมูลพร้อมพรีเซนต์โดยไม่ต้องซับซ้อน</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                </svg>
+              </div>
+              <h3 class="card__title">เชื่อมต่อกับ Google Form</h3>
+              <p class="card__text">แปะลิงก์แบบฟอร์มของคุณ ระบบดึงข้อมูลมาจัดระเบียบให้ทันที</p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 3v18h18" />
+                  <path d="M8 17V9" />
+                  <path d="M13 17V5" />
+                  <path d="M18 17v-6" />
+                </svg>
+              </div>
+              <h3 class="card__title">สรุปเป็นอินโฟกราฟิก</h3>
+              <p class="card__text">ข้อมูลถูกรวมเป็นกราฟและสถิติที่อ่านง่าย สวยงาม เหมาะกับงานนำเสนอ</p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 3a2.83 2.83 0 0 1 4 4L7.5 20.5 2 22l1.5-5.5z" />
+                </svg>
+              </div>
+              <h3 class="card__title">แก้ไขได้อิสระ</h3>
+              <p class="card__text">ปรับตัวเลข หัวข้อ หรือรายละเอียดให้ตรงงานของคุณได้ทุกเมื่อ</p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8" />
+                  <path d="M12 17v4" />
+                </svg>
+              </div>
+              <h3 class="card__title">พร้อมพรีเซนต์ทันที</h3>
+              <p class="card__text">นำไปแชร์หรือใช้ในงานนำเสนอได้เลย ไม่ต้องเริ่มจากศูนย์</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why" id="why-us">
+        <div class="container why__inner">
+          <div class="why__intro">
+            <span class="section__tag">ทำไมต้องเด</span>
+            <h2 class="section__title">เพราะเวลาเก็บข้อมูล ควรเหลือไว้ให้พรีเซนต์</h2>
+            <p class="section__text">
+              นักศึกษาใช้เวลาไปกับแบบฟอร์มแล้วยังต้องสู้กับกราฟและสไลด์อีก
+              เด ช่วยให้ข้อมูลของคุณพร้อมนำเสนอได้ในเวลาที่เหลือ
+            </p>
+          </div>
+
+          <ul class="why__list">
+            <li class="why__item">
+              <span class="why__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="why__title">ง่ายจนทำได้ทันที</h3>
+                <p class="why__text">ไม่ต้องนั่งรื้อสไลด์หรือใช้สเปรดชีต แค่แปะลิงก์แบบฟอร์มก็เสร็จ</p>
+              </div>
+            </li>
+            <li class="why__item">
+              <span class="why__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="why__title">สรุปสวยและถูกต้อง</h3>
+                <p class="why__text">ข้อมูลถูกจัดเป็นกราฟและสถิติอ่านง่าย เหมาะสำหรับงานวิชาการ</p>
+              </div>
+            </li>
+            <li class="why__item">
+              <span class="why__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="why__title">แก้ไขได้ทุกเมื่อ</h3>
+                <p class="why__text">ตัวเลขผิดหรืออยากเปลี่ยนหัวข้อ ปรับได้ทันทีโดยไม่ต้องทำใหม่ทั้งชุด</p>
+              </div>
+            </li>
+            <li class="why__item">
+              <span class="why__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="why__title">ผู้ฟังเข้าใจเร็ว</h3>
+                <p class="why__text">เห็นประเด็นสำคัญของข้อมูลได้ทันที ช่วยให้การพรีเซนต์ชัดเจนขึ้น</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section steps" id="how-it-works">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__tag">วิธีใช้งาน</span>
+            <h2 class="section__title">เริ่มต้นใน 3 ขั้นตอน</h2>
+          </div>
+
+          <ol class="steps__list">
+            <li class="step">
+              <span class="step__number">1</span>
+              <h3 class="step__title">แปะลิงก์แบบฟอร์ม</h3>
+              <p class="step__text">เริ่มจากลิงก์ Google Form ที่คุณสร้างไว้แล้ว</p>
+            </li>
+            <li class="step">
+              <span class="step__number">2</span>
+              <h3 class="step__title">เดสรุปข้อมูลให้</h3>
+              <p class="step__text">ระบบรวมข้อมูลเป็นหน้าอินโฟกราฟิกอัตโนมัติ</p>
+            </li>
+            <li class="step">
+              <span class="step__number">3</span>
+              <h3 class="step__title">แก้ไขแล้วพรีเซนต์</h3>
+              <p class="step__text">ปรับแต่งตามใจคุณ แล้วนำไปใช้ในงานนำเสนอได้เลย</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section cta-section" id="cta">
+        <div class="container">
+          <div class="cta">
+            <p class="cta__code">$ de.summarize("your-google-form")</p>
+            <h2 class="cta__title">พร้อมทำให้ข้อมูลของคุณโดดเด่นในงานพรีเซนต์หน้าแล้ว</h2>
+            <p class="cta__text">เริ่มจากแบบฟอร์ม Google ของคุณ แล้วให้เดจัดการที่เหลือ ง่าย เร็ว และพร้อมใช้ทันที</p>
+            <div class="cta__actions">
+              <a class="btn btn--primary" href="#how-it-works">เริ่มใช้งานฟรี</a>
+              <a class="btn btn--outline-light" href="mailto:de.form.studio@gmail.com">ติดต่อเรา</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a class="logo" href="#top">เด<span class="logo__dot">.</span></a>
+          <p class="footer__desc">
+            เว็บสรุปข้อมูลจาก Google Form ให้เป็นอินโฟกราฟิกที่สวยงาม
+            แก้ไขได้ และพร้อมสำหรับการนำเสนอของนักศึกษา
+          </p>
+        </div>
+        <nav class="footer__nav" aria-label="ลิงก์ท้ายหน้า">
+          <a href="#features">ฟีเจอร์</a>
+          <a href="#why-us">ทำไมต้องเด</a>
+          <a href="#how-it-works">วิธีใช้งาน</a>
+          <a href="#cta">เริ่มใช้งาน</a>
+        </nav>
+      </div>
+      <p class="footer__copy">© 2026 เด สงวนลิขสิทธิ์</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
